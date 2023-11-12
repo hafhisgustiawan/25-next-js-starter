@@ -31,7 +31,7 @@ export const getStaticPaths = async () => {
       params: { meetupId: meetup?._id.toString() },
     })),
 
-    fallback: false,
+    fallback: 'blocking', //cek video 559
   };
   // return {
   //   paths: [
